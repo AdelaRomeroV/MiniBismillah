@@ -17,7 +17,7 @@ public class Enemy_Explocion : MonoBehaviour
     public float cambioColor;
     public GameObject fxExplosion;
    
-    private void awake()
+    private void Awake()
     {
         Player = GameObject.FindWithTag("lifeplayer").GetComponent<shooter>();
     }
@@ -45,7 +45,7 @@ public class Enemy_Explocion : MonoBehaviour
             else
             {
                 StopAllCoroutines();
-                timer = 1.6f;
+                timer = 1.5f;
                 spriteRen.material.SetColor("_Color", Color.red);
             }
 
