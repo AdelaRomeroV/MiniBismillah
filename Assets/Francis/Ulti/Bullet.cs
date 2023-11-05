@@ -10,8 +10,6 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private Vector2 direction;
 
-    public int fuerza;
-
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
