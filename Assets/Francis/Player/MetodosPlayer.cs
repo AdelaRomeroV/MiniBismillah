@@ -27,7 +27,7 @@ public class MetodosPlayer : MonoBehaviour
 
     public void Regeneracion()
     {
-        if(Input.GetKeyDown(KeyCode.Q) && points <= 5 && !(life >= lifemax))
+        if(Input.GetKeyDown(KeyCode.Q) && points >= 5 && !(life >= lifemax))
         {
             ChangeLife(2);
             points--;
